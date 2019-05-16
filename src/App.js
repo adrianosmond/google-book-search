@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BookSearchForm from 'containers/BookSearch/BookSearchForm';
+import BookSearchResults from 'containers/BookSearch/BookSearchResults';
+import BookSearchPagination from 'containers/BookSearch/BookSearchPagination';
+import BookSearchHistory from 'containers/BookSearch/BookSearchHistory';
+import Page from 'components/Page';
+import MainAndAside from 'components/MainAndAside';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Page>
+      <BookSearchForm />
+      <MainAndAside
+        main={
+          <>
+            <BookSearchResults />
+            <BookSearchPagination />
+          </>
+        }
+        aside={<BookSearchHistory />}
+      />
+    </Page>
   );
 }
 

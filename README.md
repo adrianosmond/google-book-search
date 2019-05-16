@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Google Books Search
 
-## Available Scripts
+An application to search for books from the Google Books API.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and requires Node >= 8.10. In order to install the dependencies, open a terminal in the project directory and run: `npm ci`
 
-Runs the app in the development mode.<br>
+## Running the app
+
+`npm start` runs the app in development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+## Building the app
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm run build` Builds the app for production to the `build` folder.<br>
+It bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What I have done
 
-### `npm run eject`
+- Built a page to search the Google Books API and display a list of results showing key information, with a link to view the full information on the Google Books website
+- Allowed the user to page through the results
+- Provided a link to the Google Books result so that the user can get the full details
+- Provided a list of the recent searches, which can be clicked on to re-perform the search
+- Mobile first, responsive CSS to allow easy use on smaller screens
+- Used semantic HTML, hidden text and some aria tags to make it work a bit better on a screen reader
+- Tested on Safari, Chrome, Firefox, Mobile Safari. (My personal MacBook is a bit underpowered for a VM and I live in a household with only iPhones, so no Edge and Chrome for Mobile testing. I don't think I've used any controversial JS / CSS so I don't see any reason why they wouldn't work)
+- Separated presentation from business logic, with presentation taken tare of using reusable components (see `src/components`)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Still to do
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If this were a real project there are quite a few things I'd still need (/like) to do:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Update the URL on search (and perform the search on reload if a URL param is present)
+- Allow the user to change params we send to the API (e.g. num results per page)
+- Internationalisation (including passing the preferred language to the API)
+- Proper error handling
+- Test on Edge and Chrome for Mobile
+- Get an API key so this can be used on a domain other than localhost
+- Create a details page instead of sending people off to Google Books
+- Store recent search history so it doesn't disappear on reload
+- Write tests
+- [Storybook](https://storybook.js.org/) for components
+- Get an actual designer to do the visuals!

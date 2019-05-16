@@ -1,0 +1,43 @@
+.form {
+  background-color: var(--color-grey-lighter);
+  box-shadow: 0 0 1rem var(--color-grey-medium);
+  margin-bottom: 0.5rem;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: var(--size-container);
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: var(--font-size-large);
+}
+
+.button {
+  margin-top: 1rem;
+  min-width: 12.5rem;
+}
+
+@media (min-width: 40rem) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .title {
+    width: 100%;
+  }
+
+  .field {
+    flex-grow: 1;
+  }
+
+  .button {
+    margin-left: 1rem;
+  }
+}

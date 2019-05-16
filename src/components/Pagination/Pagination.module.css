@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 0 0.5rem 1rem;
+  text-align: center;
+  font-size: var(--font-size-small);
+}
+
+.buttons {
+  display: inline-flex;
+  margin: 0.5rem auto 0;
+  align-items: center;
+}
+
+.current {
+  margin: 0 2rem;
+  font-size: var(--font-size-medium);
+}
+
+.prevButton {
+  order: -1;
+}

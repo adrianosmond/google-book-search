@@ -1,0 +1,29 @@
+.button {
+  appearance: none;
+  padding: 0;
+  height: 2.5rem;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-radius: var(--size-border-radius);
+  border-bottom: 0.125rem solid var(--color-black-semi-transparent);
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.secondary {
+  background-color: var(--color-grey-dark);
+  color: var(--color-white);
+}
+
+.button:active {
+  border: 0.0625rem solid var(--color-black-semi-transparent);
+  padding-bottom: 1px;
+}
+
+.button:disabled {
+  background-color: var(--color-grey-medium);
+}

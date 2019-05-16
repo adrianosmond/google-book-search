@@ -1,0 +1,11 @@
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: var(--font-size-medium);
+  color: var(--color-grey-dark);
+  text-align: center;
+  height: 100%;
+}

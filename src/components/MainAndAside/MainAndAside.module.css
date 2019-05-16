@@ -1,0 +1,35 @@
+.wrapper {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: var(--size-container);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: stretch;
+  justify-content: center;
+}
+
+@media (min-width: 23rem) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .aside {
+    flex-basis: 16rem;
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }
+}

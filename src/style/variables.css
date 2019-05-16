@@ -1,0 +1,38 @@
+:root {
+  /*  COLORS */
+  --color-white: #fff;
+  --color-grey-lighter: #f7f7f7;
+  --color-grey-light: #eee;
+  --color-grey-medium: #ccc;
+  --color-grey-dark: #666;
+  --color-grey-darker: #333;
+  --color-black-semi-transparent: rgba(0, 0, 0, 0.25);
+  --color-primary: #0073e6;
+
+  /* DIMENSIONS */
+  --size-container: 60rem;
+  --size-border-radius: 0.5rem;
+
+  /* FONT SIZES */
+  --font-size-tiny: 0.75rem;
+  --font-size-small: 0.875rem;
+  --font-size-normal: 1rem;
+  --font-size-medium: 1.25rem;
+  --font-size-large: 1.5rem;
+
+  /* FONT WEIGHTS */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 500;
+  --font-weight-bolder: 700;
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --font-size-tiny: 0.875rem;
+    --font-size-small: 1rem;
+    --font-size-normal: 1.25rem;
+    --font-size-medium: 1.5rem;
+    --font-size-large: 2rem;
+  }
+}

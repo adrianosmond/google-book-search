@@ -1,0 +1,22 @@
+.wrapper {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background-color: var(--color-grey-lighter);
+  box-shadow: 0 0 1rem var(--color-grey-medium);
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-bolder);
+}
+
+.link {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 50rem) {
+  .wrapper {
+    margin-top: 2.5rem;
+  }
+}
